@@ -1,7 +1,8 @@
-'use strict';
+"use strict";
 
 (function() {
-    angular.module('resumeApp', ["ngRoute", "firebase"])
+
+    angular.module("resumeApp", ["ngRoute", "firebase"])
         .config(["$routeProvider", "$locationProvider", function($routeProvider, $locationProvider) {
 
             $routeProvider
@@ -18,4 +19,5 @@
             $locationProvider.html5Mode(true);
 
         }]);
+
 })();

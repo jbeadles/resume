@@ -8,21 +8,28 @@
 
         var dataFactory = {};
 
-        dataFactory.seed = function() {
-            var seedRef = new Firebase(baseUrl);
-            var fb = $firebaseObject(seedRef);
-
-            fb.aboutMe = {
-                name: "John Beadles",
-                location: "Austin, TX"
-            };
-
-            fb.$save();
+        var buildFbObject = function(url) {
+            return $firebaseObject(new Firebase(baseUrl + "/" + url));
         };
 
         dataFactory.getAboutMe = function() {
-            var aboutMeRef = new Firebase(baseUrl + "/aboutMe");
-            return $firebaseObject(aboutMeRef);
+            return buildFbObject("aboutMe");
+        };
+
+        dataFactory.getSummaryOfQualifications = function() {
+            return buildFbObject("summaryOfQualifications");
+        };
+
+        dataFactory.getWorkExperience = function() {
+            return buildFbObject("workExperience");
+        };
+
+        dataFactory.getTechnicalSkills = function() {
+            return buildFbObject("technicalSkills");
+        };
+
+        dataFactory.getEducation = function() {
+            return buildFbObject("education");
         };
 
         return dataFactory;
