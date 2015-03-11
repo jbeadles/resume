@@ -2,14 +2,22 @@
 
 (function(app) {
 
-    var dataService = function($firebaseObject) {
+    var dataService = function($firebaseObject, $firebaseArray) {
 
         var baseUrl = "https://glaring-heat-4091.firebaseio.com/data";
 
         var dataFactory = {};
 
-        var buildFbObject = function(url) {
-            return $firebaseObject(new Firebase(baseUrl + "/" + url));
+        var buildFbObject = function(url,type) {
+            type = type || "obj";
+
+            if(type === "obj") {
+                return $firebaseObject(new Firebase(baseUrl + "/" + url));
+            }
+
+            if(type === "array") {
+                return $firebaseArray(new Firebase(baseUrl + "/" + url));
+            }
         };
 
         dataFactory.getAboutMe = function() {
@@ -36,6 +44,6 @@
 
     };
 
-    app.factory("dataService", ["$firebaseObject", dataService]);
+    app.factory("dataService", ["$firebaseObject", "$firebaseArray", dataService]);
 
 })(angular.module("resumeApp"));

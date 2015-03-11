@@ -9,18 +9,35 @@
 
     <link rel="stylesheet" href="app/styles/normalize.css">
     <link rel="stylesheet" href="app/styles/foundation.min.css">
+    <link rel="stylesheet" href="app/styles/app.css">
 
     <script src="app/vendor/modernizr.js"></script>
 </head>
 <body ng-app="resumeApp" ng-cloak>
-    <div>
-        <ul>
-            <li><a href="/resume">Home</a></li>
-            <li><a href="skills">Skills</a></li>
-            <li><a href="employment">Employment</a></li>
-            <li><a href="interests">Interests</a></li>
+
+    <nav class="top-bar" data-topbar role="navigation">
+        <ul class="title-area">
+            <li class="name">
+                <h1><a href="/resume">John Beadles</a></h1>
+            </li>
+            <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
         </ul>
-    </div>
+
+        <section class="top-bar-section">
+            <ul class="left">
+                <li><a href="skills">Skills</a></li>
+                <li><a href="employment">Employment</a></li>
+                <li><a href="interests">Interests</a></li>
+            </ul>
+
+            <ul class="right contact-info">
+                <li>jbbeadles@gmail.com</li>
+                <li>(512) 373-6970</li>
+            </ul>
+        </section>
+
+    </nav>
+
     <div>
         <ng-view></ng-view>
     </div>
@@ -37,5 +54,9 @@
     <script src="app/Interests/InterestsController.js"></script>
     <script src="app/Skills/SkillsController.js"></script>
     <script src="app/common/DataService.js"></script>
+
+    <script>
+        $(document).foundation();
+    </script>
 </body>
 </html>

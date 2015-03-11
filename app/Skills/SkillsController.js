@@ -6,7 +6,7 @@
 
         var vm = this;
 
-        vm.test = "Test Success!";
+        vm.technicalSkills = dataService.getTechnicalSkills();
 
     };
 

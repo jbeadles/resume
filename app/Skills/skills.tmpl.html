@@ -1,2 +1,20 @@
-<h1>Skills</h1>
-<p>{{ skills.test }}</p>
+<section class="content skills">
+    <div class="row">
+        <div class="text-center">
+            <h2>Here are some of the things I'm good at.</h2>
+        </div>
+        <div class="small-6 columns">
+            <div class="panel">
+                <h4 class="text-center skill-header">Technical Skills</h4>
+                <div ng-repeat="skill in skills.technicalSkills">
+                    <p>{{ skill[$index].name }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="small-6 columns">
+            <div class="panel">
+                <h4 class="text-center skill-header">Other Skills</h4>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,32 @@
+/* Specificity Overrides */
+.top-bar, .top-bar-section li:not(.has-form) a:not(.button), .top-bar-section li:not(.has-form) a:not(.button):hover { background: #36B66E; }
+
+
+/* Common */
+.content {
+    margin-top: 25px;
+}
+
+.grid-spacer {
+    margin: 0 5px;
+}
+
+
+/* Navbar */
+.top-bar-section .contact-info li {
+    background: #36B66E;
+    color: #fff;
+    font-family: "Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+    font-size: 0.825rem;
+    line-height: 2.8125rem;
+    padding: 0 0.9375rem;
+}
+
+
+/* About Me */
+.profile-pic {
+    border-radius: 150px;
+    height: 300px;
+    margin: 20px 0;
+    width: 300px;
+}
