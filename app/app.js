@@ -12,6 +12,12 @@
                     controller: "AboutMeController",
                     controllerAs: "my"
                 })
+                .when("/employment",
+                {
+                    templateUrl: "app/Employment/employment.tmpl.html",
+                    controller: "EmploymentController",
+                    controllerAs: "employment"
+                })
                 .otherwise({
                     redirectTo: "/"
                 });

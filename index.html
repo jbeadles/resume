@@ -5,7 +5,15 @@
     <title>Resume | John Beadles</title>
     <base href="/resume/app">
 </head>
-<body ng-app="resumeApp">
+<body ng-app="resumeApp" ng-cloak>
+    <div>
+        <ul>
+            <li><a href="/resume">Home</a></li>
+            <li><a href="skills">Skills</a></li>
+            <li><a href="employment">Employment</a></li>
+            <li><a href="interests">Interests</a></li>
+        </ul>
+    </div>
     <div>
         <ng-view></ng-view>
     </div>
@@ -16,6 +24,7 @@
     <script src="app/vendor/angularfire.min.js"></script>
     <script src="app/app.js"></script>
     <script src="app/AboutMe/AboutMeController.js"></script>
+    <script src="app/Employment/EmploymentController.js"></script>
     <script src="app/common/DataService.js"></script>
 </body>
 </html>
