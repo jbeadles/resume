@@ -12,7 +12,7 @@
                     controller: "AboutMeController",
                     controllerAs: "my"
                 })
-                .when("skills", {
+                .when("/skills", {
                     templateUrl: "app/Skills/skills.tmpl.html",
                     controller: "SkillsController",
                     controllerAs: "skills"
