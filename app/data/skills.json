@@ -1,8 +1,29 @@
 {
   "technicalSkills": [
-
+    { "name": "Javascript", "level": "80%" },
+    { "name": "jQuery", "level": "80%" },
+    { "name": "CSS3", "level": "75%" },
+    { "name": "HTML5", "level": "85%" },
+    { "name": "Angular", "level": "70%" },
+    { "name": "React", "level": "35%" },
+    { "name": "Knockout", "level": "30%" },
+    { "name": "Bootstrap/Foundation", "level": "80%" },
+    { "name": "SQL", "level": "55%" },
+    { "name": "MongoDB", "level": "40%" },
+    { "name": "Nodejs/Express", "level": "50%" },
+    { "name": "C#/ASP.NET MVC", "level": "45%" },
+    { "name": "Ruby on Rails", "level": "40%" },
+    { "name": "Sass/SCSS", "level": "65%" },
+    { "name": "Git", "level": "50%" }
   ],
   "otherSkills": [
-
+    { "name": "Agile Project Management", "level": "70%" },
+    { "name": "JIRA", "level": "75%" },
+    { "name": "Written/Verbal Communication", "level": "85%" },
+    { "name": "MS Office/Google Suite", "level": "70%" },
+    { "name": "Photoshop", "level": "35%" },
+    { "name": "Data Analysis/Reporting", "level": "60%" },
+    { "name": "Customer Service/Client Relations", "level": "75%" },
+    { "name": "IT General Controls", "level": "40%" }
   ]
 }

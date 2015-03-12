@@ -2,10 +2,15 @@
     <div class="row">
         <div class="text-center">
             <h2>Hi, I'm John.</h2>
+            <p class="small-12 columns">{{ my.data.position }}  {{ my.data.description }}</p>
             <img class="profile-pic" src="./images/profile-placeholder.jpg">
-            <p>{{ my.data.position }}</p>
-            <p>{{ my.data.description }}</p>
-            <p>My goal is {{ my.data.objective }}</p>
+            <div class="qualifications small-8 small-offset-2 columns end">
+                <p class="qualifications-header">Here are a few of my qualifications:</p>
+                <ul class="qualifications-list text-left">
+                    <li ng-repeat="qualification in my.data.qualifications">{{ qualification }}</li>
+                </ul>
+            </div>
+            <p class="small-12 columns">{{ my.data.objective }}</p>
         </div>
     </div>
 </section>

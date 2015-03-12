@@ -6,7 +6,10 @@
 
         var vm = this;
 
-        vm.technicalSkills = dataService.get("skills");
+        dataService.get("skills")
+            .then(function(data) {
+                vm.data = data;
+            });
 
     };
 

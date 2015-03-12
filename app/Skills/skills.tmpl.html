@@ -6,14 +6,33 @@
         <div class="small-6 columns">
             <div class="panel">
                 <h4 class="text-center skill-header">Technical Skills</h4>
-                <div ng-repeat="skill in skills.technicalSkills.languages">
-                    <p>{{ skill }}</p>
+                <div class="skill-list" ng-repeat="tSkill in skills.data.technicalSkills">
+                    <p class="skill-name">{{ tSkill.name }}</p>
+                    <div class="progress">
+                        <span class="meter" style="width: {{ tSkill.level }}"></span>
+                        <p class="row skill-levels">
+                            <span class="small-4 columns text-left">Beginner</span>
+                            <span class="small-4 columns text-right">Intermediate</span>
+                            <span class="small-4 columns text-right">Expert</span>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="small-6 columns">
             <div class="panel">
                 <h4 class="text-center skill-header">Other Skills</h4>
+                <div class="skill-list" ng-repeat="oSkill in skills.data.otherSkills">
+                    <p class="skill-name">{{ oSkill.name }}</p>
+                    <div class="progress">
+                        <span class="meter" style="width: {{ oSkill.level }}"></span>
+                        <p class="row skill-levels">
+                            <span class="small-4 columns text-left">Beginner</span>
+                            <span class="small-4 columns text-right">Intermediate</span>
+                            <span class="small-4 columns text-right">Expert</span>
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

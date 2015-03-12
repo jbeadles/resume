@@ -27,6 +27,43 @@
 .profile-pic {
     border-radius: 150px;
     height: 300px;
-    margin: 20px 0;
+    margin: 20px 0 30px 0;
     width: 300px;
+}
+
+.qualifications-header {
+    border-bottom: 1px solid #ccc;
+    font-size: 1.2rem;
+}
+
+.qualifications-list li {
+    margin: 5px 0;
+}
+
+/* Skills */
+.panel {
+    margin-top: 10px;
+}
+
+.skill-list {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.skill-list .skill-name {
+    color: #1e1e1e;
+    margin-bottom: 5px;
+}
+
+.skill-list .progress {
+    border-color: #ccc;
+}
+
+.skill-list .meter {
+    background-color: #569ABB;
+}
+
+.skill-list .skill-levels {
+    color: #4e4e4e;
+    font-size: .8rem;
 }

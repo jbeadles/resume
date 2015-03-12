@@ -1,5 +1,12 @@
 {
-  "position": "I am a Software Engineer in Austin, TX.",
+  "position": "I'm a mid-level software engineer with 4 years of front end and back end development experience living in Austin, TX.",
   "description": "I have a passion for developing data-driven applications with Javascript, Angular and other front-end technologies.",
-  "objective": "My goal is to obtain a mid-level position as a Front End/UI developer, continue advancing my skills as a software engineer and eventually grow into a senior-level position."
+  "objective": "My goal is to obtain a mid-level position as a Front End/UI developer, continue advancing my skills as a software engineer and eventually grow into a senior-level position.",
+  "qualifications": [
+    "Expertise is front end programming languages and techniques, including, but not limited to, Javascript, jQuery, CSS and HTML5",
+    "Detailed working experience with multiple front end frameworks and libraries such as Angular, Knockout and React",
+    "Extensive knowledge of MVC architecture, software design patterns, developing data-driven applications and keeping code under source control via Git or Subversion",
+    "Passion for collaboration as well as writing and documenting clean, well-formatted, modular code",
+    "Ability to learn new languages and methodologies quickly and efficiently"
+  ]
 }
