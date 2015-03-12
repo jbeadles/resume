@@ -6,7 +6,7 @@
 
         var vm = this;
 
-        vm.technicalSkills = dataService.getTechnicalSkills();
+        vm.technicalSkills = dataService.get("skills");
 
     };
 

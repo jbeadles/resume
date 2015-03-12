@@ -2,48 +2,32 @@
 
 (function(app) {
 
-    var dataService = function($firebaseObject, $firebaseArray) {
+    var dataService = function($q, $http) {
 
-        var baseUrl = "https://glaring-heat-4091.firebaseio.com/data";
+        var baseUrl = "./app/data/";
 
-        var dataFactory = {};
+        return {
 
-        var buildFbObject = function(url,type) {
-            type = type || "obj";
+            get: function(fileName) {
 
-            if(type === "obj") {
-                return $firebaseObject(new Firebase(baseUrl + "/" + url));
+                var dfd = $q.defer();
+
+                $http.get(baseUrl + fileName + ".json")
+                    .success(function(data) {
+                        dfd.resolve(data);
+                    })
+                    .error(function(err) {
+                        dfd.reject(err);
+                    });
+
+                return dfd.promise;
+
             }
 
-            if(type === "array") {
-                return $firebaseArray(new Firebase(baseUrl + "/" + url));
-            }
         };
-
-        dataFactory.getAboutMe = function() {
-            return buildFbObject("aboutMe");
-        };
-
-        dataFactory.getSummaryOfQualifications = function() {
-            return buildFbObject("summaryOfQualifications");
-        };
-
-        dataFactory.getWorkExperience = function() {
-            return buildFbObject("workExperience");
-        };
-
-        dataFactory.getTechnicalSkills = function() {
-            return buildFbObject("technicalSkills");
-        };
-
-        dataFactory.getEducation = function() {
-            return buildFbObject("education");
-        };
-
-        return dataFactory;
 
     };
 
-    app.factory("dataService", ["$firebaseObject", "$firebaseArray", dataService]);
+    app.factory("dataService", ["$q", "$http", dataService]);
 
 })(angular.module("resumeApp"));

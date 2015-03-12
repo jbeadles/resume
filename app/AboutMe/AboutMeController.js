@@ -6,7 +6,10 @@
 
         var vm = this;
 
-        vm.data = dataService.getAboutMe();
+        dataService.get("about-me")
+            .then(function(data) {
+                vm.data = data;
+            });
 
     };
 
