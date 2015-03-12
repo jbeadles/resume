@@ -67,3 +67,33 @@
     color: #4e4e4e;
     font-size: .8rem;
 }
+
+
+/* Education & Employment */
+.job-information .company {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 0;
+}
+
+.job-information .position, .job-information .location, .job-information .time {
+    color: #4e4e4e;
+    font-size: .9rem;
+    margin-bottom: 2px;
+}
+
+.job-responsibilities {
+    margin-top: 10px;
+}
+
+.education p {
+    margin: 2px 0;
+}
+
+.education .degree-info {
+    font-size: 1.1rem;
+}
+
+.education .school, .education .location {
+    color: #4e4e4e;
+    font-size: .9rem;
+}

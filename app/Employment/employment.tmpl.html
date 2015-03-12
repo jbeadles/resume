@@ -1,2 +1,32 @@
-<h1>Employment</h1>
-<p>{{ employment.test }}</p>
+<section class="content employment">
+    <div class="row">
+        <h3 class="text-center small-12 columns">My Employment History</h3>
+        <div class="job small-8 small-offset-2 columns" ng-repeat="job in employment.data.employment">
+            <div class="job-information">
+                <h4 class="company">{{ job.company }}</h4>
+                <p class="position">{{ job.position }}</p>
+                <p class="location">{{ job.location }}</p>
+                <p class="time">{{ job.start }} to {{ job.end }}</p>
+            </div>
+            <div class="job-responsibilities">
+                <ul>
+                    <li ng-repeat="responsibility in job.responsibilities">
+                        {{ responsibility }}
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="small-2 small-offset-10"></div>
+    </div>
+</section>
+
+<section class="content education">
+    <div class="row">
+        <h3 class="text-center small-12 columns">My Education</h3>
+        <div class="education text-left small-10 small-offset-2 columns">
+            <p class="degree-info">{{ employment.data.education.degree }} - {{ employment.data.education.graduationDate }}</p>
+            <p class="school">{{ employment.data.education.school }}</p>
+            <p class="location">{{ employment.data.education.location }}</p>
+        </div>
+    </div>
+</section>

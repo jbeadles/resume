@@ -6,7 +6,10 @@
 
         var vm = this;
 
-        vm.data = dataService.getWorkExperience();
+        dataService.get("employment")
+            .then(function(data) {
+                vm.data = data;
+            });
 
     };
 

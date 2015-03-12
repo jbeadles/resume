@@ -1,0 +1,45 @@
+{
+  "employment": [
+    {
+      "company": "XO Group, Inc",
+      "location": "Austin, TX",
+      "position": "Software Engineer",
+      "start": "October 2013",
+      "end": "Present",
+      "responsibilities": [
+        "Developed SQL database solution for revenue recognition to satisfy SOX audit needs",
+        "Created multiple HR solutions on top of Sharepoint (used as an API) such as a Performance Management solution, Org Chart and internal user profile page",
+        "Developed custom search engine for managing advertising inventory"
+      ]
+    },
+    {
+      "company": "Blizzard Entertainment",
+      "location": "Austin, TX",
+      "position": "Battle.net Web Engineer, Temp Assignment",
+      "start": "May 2013",
+      "end": "August 2013",
+      "responsibilities": [
+        "Primary front-end engineer for support site revamp (https://us.battle.net/support/en/help/) from initial project planning through QA and launch using SCRUM",
+        "Developed custom javascript APIs and objects that could be reused throughout multiple applications",
+        "Addressed bugs via Kanban with a 5 day turnaround across all Blizzard websites"
+      ]
+    },
+    {
+      "company": "Blizzard Entertainment",
+      "location": "Austin, TX",
+      "position": "Service Level Coordinator",
+      "start": "October 2009",
+      "end": "May 2013",
+      "responsibilities": [
+        "Created multiple web applications from scratch to increase team efficiency and reduce human error",
+        "Responsible for workforce management and queue management as well as point of contact between network operations/development and customer service for all of North America"
+      ]
+    }
+  ],
+  "education": {
+    "degree": "B.S. Economics",
+    "graduationDate": "December 2007",
+    "location": "Lafayette, LA",
+    "school": "University of Louisiana at Lafayette"
+  }
+}
