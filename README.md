@@ -8,4 +8,4 @@
 
 - Improve responsiveness
 - Turn some repetitive components into directives
-- Handle reloading of pages (currently will 404)
+- Add unit test coverage
