@@ -1,0 +1,20 @@
+{
+  "haveRead": [
+    { "title": "Ready Player One", "googleBookId": "FY_HWAcm10MC" },
+    { "title": "Mistborn: The Final Empire", "googleBookId": "t_ZYYXZq4RgC"},
+    { "title": "Mistborn: The Well of Ascension", "googleBookId": "Y-41Q9zk32kC"},
+    { "title": "Mistborn: The Hero of Ages", "googleBookId": "uTt-H5MAGT0C" },
+    { "title": "Mistborn: The Alloy of Law", "googleBookId": "TjiYUm-47bQC"}
+  ],
+
+  "readingNow": [
+    { "title": "The Way of Kings", "googleBookId": "LN_a49HEpmwC" }
+  ],
+
+  "toRead": [
+    { "title": "Words of Radiance", "googleBookId": "kYjqAQAAQBAJ" },
+    { "title": "The Eye of the World", "googleBookId": "1PgKPuFIz1kC" },
+    { "title": "Elantris", "googleBookId": "ZnHFzj4wKIQC" },
+    { "title": "Armada", "googleBookId": "3k-wBgAAQBAJ" }
+  ]
+}

@@ -1,6 +1,5 @@
-"use strict";
-
 (function(app) {
+    "use strict";
 
     var dataService = function($q, $http) {
 
@@ -16,8 +15,8 @@
                     .success(function(data) {
                         dfd.resolve(data);
                     })
-                    .error(function(err) {
-                        dfd.reject(err);
+                    .catch(function(data) {
+                        dfd.reject(data.error);
                     });
 
                 return dfd.promise;

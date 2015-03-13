@@ -1,2 +1,47 @@
-<h1>Interests</h1>
-<p>{{ interests.test }}</p>
+<section class="content interests">
+    <h3 class="interests-header text-center">Some More About Me</h3>
+    <div class="interests row">
+        <div class="small-6 columns">
+            <p>When I'm not hacking away at things, I can almost always be found hanging out with my family -- my wife, LA, and our son, Robbie.  That's them over there.</p>
+            <p>We enjoy the outdoors and spend our evenings taking walks or going on runs (though we do our fair share of binging on Netflix too).</p>
+            <p>A self-professed nerd, on the weekends I still try to find a little time to squeeze in a video game or two.</p>
+            <p>I am an avid sports fan, but having played soccer in high school, I live for the World Cup.  It's one of the top items on my bucket list!</p>
+            <p>I have an ever-growing passion for reading, especially fantasy novels.  I recently finished the <em>Mistborn</em> trilogy and am currently working on tackling <em>The Stormlight Archives</em>.</p>
+            <p>You can see some of the books I have been reading, am currently reading and plan to read in the future below.</p>
+        </div>
+        <div class="small-6 columns">
+            <img src="./app/images/family.jpg" class="family-pic" alt="My Family">
+        </div>
+    </div>
+    <div class="books row">
+        <div class="have-read small-12 column">
+            <h3>What I've Read Recently</h3>
+            <div class="small-3 columns move-left book" ng-repeat="book in interests.haveReadBooks">
+                <p class="book-title">{{ book.volumeInfo.title }}</p>
+                <p class="book-author">by {{ book.volumeInfo.authors[0]}}</p>
+                <img ng-src="{{ book.volumeInfo.imageLinks.smallThumbnail }}" class="book-image" alt="{{ book.volumeInfo.title }}">
+                <a class="book-link" href="{{ book.volumeInfo.canonicalVolumeLink }}" target="_blank">More Info</a>
+            </div>
+        </div>
+
+        <div class="now-reading small-12 columns">
+            <h3>What I'm Reading Now</h3>
+            <div class="small-3 columns book" ng-repeat="book in interests.readingNowBooks">
+                <p class="book-title">{{ book.volumeInfo.title }}</p>
+                <p class="book-author">by {{ book.volumeInfo.authors[0]}}</p>
+                <img ng-src="{{ book.volumeInfo.imageLinks.smallThumbnail }}" class="book-image" alt="{{ book.volumeInfo.title }}">
+                <a class="book-link" href="{{ book.volumeInfo.canonicalVolumeLink }}" target="_blank">More Info</a>
+            </div>
+        </div>
+
+        <div class="to-read small-12 columns">
+            <h3>What I'm Reading Next</h3>
+            <div class="small-3 columns book" ng-repeat="book in interests.toReadBooks">
+                <p class="book-title">{{ book.volumeInfo.title }}</p>
+                <p class="book-author">by {{ book.volumeInfo.authors[0]}}</p>
+                <img ng-src="{{ book.volumeInfo.imageLinks.smallThumbnail }}" class="book-image" alt="{{ book.volumeInfo.title }}">
+                <a class="book-link" href="{{ book.volumeInfo.canonicalVolumeLink }}" target="_blank">More Info</a>
+            </div>
+        </div>
+    </div>
+</section>

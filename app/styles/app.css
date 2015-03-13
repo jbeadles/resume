@@ -97,3 +97,57 @@
     color: #4e4e4e;
     font-size: .9rem;
 }
+
+.education .location {
+    margin-bottom: 30px;
+}
+
+
+/* Interests */
+[class*="column"]+[class*="column"]:last-child {
+    float: left;
+}
+
+.interests-header {
+    margin-bottom: 20px;
+}
+
+.family-pic {
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.books {
+    margin-top: 25px;
+}
+
+.books h3 {
+    border-bottom: 1px solid #ccc;
+}
+
+.book {
+    height: 350px;
+}
+
+.book-title {
+    color: #1e1e1e;
+    font-size: 1.1rem;
+    margin-bottom: -5px;
+}
+
+.book-author {
+    color: #4e4e4e;
+    font-size: .9rem;
+    margin-bottom: 10px;
+}
+
+.book-image {
+    display: block;
+    height: 200px;
+}
+
+.book-link {
+    display: block;
+    margin-top: 10px;
+}
+

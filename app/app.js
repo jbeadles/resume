@@ -1,8 +1,7 @@
-"use strict";
-
 (function() {
+    "use strict";
 
-    angular.module("resumeApp", ["ngRoute", "firebase"])
+    angular.module("resumeApp", ["ngRoute"])
         .config(["$routeProvider", "$locationProvider", function($routeProvider, $locationProvider) {
 
             $routeProvider

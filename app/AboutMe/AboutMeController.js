@@ -1,6 +1,5 @@
-"use strict";
-
 (function(app) {
+    "use strict";
 
     var aboutMeController = function(dataService) {
 

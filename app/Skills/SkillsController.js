@@ -1,6 +1,5 @@
-"use strict";
-
 (function(app) {
+    "use strict";
 
     var skillsController = function(dataService) {
 
